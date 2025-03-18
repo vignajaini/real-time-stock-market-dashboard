@@ -1,233 +1,102 @@
-
-/*.home-container {
-    
-    background: linear-gradient(135deg, #000000, #333333); 
-    color: white;
-    
-  }
-  
-  .hero {
-    max-width: 900px;
-    padding: 20px;
-  }
-  
-  .hero h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-  }
-  
-  .hero p {
-    font-size: 1.3rem;
-    line-height: 1.5;
-    max-width: 700px;
-    margin: 0 auto;
-  }
-  
-  .home-btn {
-    margin-top: 30px;
-    padding: 14px 30px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: white;
-    background: #ff9800; 
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: transform 0.3s, background 0.3s;
-  }
-  
-  .home-btn:hover {
-    background: #e68900;
-    transform: scale(1.05);
-  }
-  
-  .features {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    width: 90%;
-    max-width: 1000px;
-    margin-top: 40px;
-  }
-  
-  .feature-card {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    color: black;
-    transition: transform 0.3s;
-  }
-  
-  .feature-card:hover {
-    transform: scale(1.05);
-  }
-  
-  .full-page {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .hero h1 {
-      font-size: 2.5rem;
-    }
-  
-    .hero p {
-      font-size: 1.1rem;
-    }
-  
-    .home-btn {
-      padding: 12px 25px;
-      font-size: 1rem;
-    }
-  
-    .features {
-      grid-template-columns: 1fr;
-    }
-  }*/
-  .home-container {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-    background: url("https://source.unsplash.com/1600x900/?stock,finance,trading") no-repeat center center/cover;
-    color: white;
+.home-container {
+  background: linear-gradient(135deg, #000000, #333333);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-/* Overlay for better text visibility */
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-}
-
-/* Navbar */
-.navbar {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 50px;
-    background: rgba(0, 0, 0, 0.7);
-}
-
-.logo {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #ff9800;
-}
-
-.nav-links {
-    display: flex;
-    gap: 20px;
-}
-
-
-/* Sign In & Log In Buttons */
-.auth-button {
-    padding: 8px 15px;
-    border-radius: 5px;
-    font-size: 1rem;
-    text-decoration: none;
-    color: white;
-    border: 1px solid #ff9800;
-    transition: background 0.3s, color 0.3s;
-}
-
-.auth-button:hover {
-    background: #ff9800;
-    color: black;
-}
-
-.signup {
-    background: #ff9800;
-    color: black;
-}
-
-.signup:hover {
-    background: white;
-    color: black;
-}
-
-/* Hero Section */
 .hero {
-    max-width: 900px;
-    padding: 20px;
-    position: relative;
-    z-index: 2;
-    margin-top: 80px;
+  max-width: 900px;
+  padding: 20px;
 }
 
 .hero h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 15px;
-    text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-transform: uppercase;
 }
 
 .hero p {
-    font-size: 1.3rem;
-    line-height: 1.5;
-    max-width: 700px;
-    margin: 0 auto;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
-.button-primary {
-    margin-top: 30px;
-    padding: 14px 30px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: white;
-    background: #ff9800;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: transform 0.3s, background 0.3s;
+/* Centering and Styling the Sign Up Button */
+.home-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 16px 40px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: white;
+  background: #ff9800;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+  box-shadow: 0px 5px 15px rgba(255, 152, 0, 0.5);
 }
 
-.button-primary:hover {
-    background: #e68900;
-    transform: scale(1.05);
+.home-btn:hover {
+  background: #e68900;
+  transform: scale(1.1);
 }
 
-/* Features Section */
+/* Features Section Adjustments */
 .features {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    width: 90%;
-    max-width: 1000px;
-    margin-top: 40px;
-    position: relative;
-    z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  width: 90%;
+  max-width: 1000px;
+  margin-top: 40px;
 }
 
 .feature-card {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-    backdrop-filter: blur(10px);
-    text-align: center;
-    color: white;
-    transition: transform 0.3s;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: black;
+  transition: transform 0.3s;
 }
 
 .feature-card:hover {
-    transform: scale(1.05);
-    background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+/* Ensuring Full-Page Centering */
+.full-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .hero h1 {
+      font-size: 2.5rem;
+  }
+
+  .hero p {
+      font-size: 1.1rem;
+  }
+
+  .home-btn {
+      padding: 14px 35px;
+      font-size: 1.2rem;
+  }
+
+  .features {
+      grid-template-columns: 1fr;
+  }
 }
