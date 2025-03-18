@@ -64,5 +64,58 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }.dashboard {
+    text-align: center;
+    padding: 20px;
   }
+  
+  .tabs button {
+    margin: 10px;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .stock-grid, .mutual-fund-grid {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .stock-card, .mutual-fund-card {
+    background: white;
+    padding: 15px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .stock-logo {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .stock-price {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .positive {
+    color: green;
+  }
+  
+  .negative {
+    color: red;
+  }
+  
+  .fno-chart {
+    width: 80%;
+    margin: auto;
+  }
+  
 }

@@ -1,22 +1,39 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import Stocks from "./Stocks";
+import MutualFunds from "./MutualFunds";
+import FNO from "./FNO";
 
 const Dashboard = () => {
-  const [stocks] = useState([
-    { symbol: "AAPL", price: 150 },
-    { symbol: "GOOGL", price: 2800 },
-    { symbol: "AMZN", price: 3500 },
-  ]);
+  const [activeTab, setActiveTab] = useState("stocks");
 
   return (
-    <div className="dashboard">
-      <h1 className="dashboard-title">📊 Stock Market Dashboard</h1>
-      <div className="stock-grid">
-        {stocks.map(({ symbol, price }) => (
-          <div key={symbol} className="stock-card">
-            <h2>{symbol}</h2>
-            <p className="stock-price">${price}</p>
-          </div>
-        ))}
+    <div className="p-6">
+      <h1 className="text-3xl font-bold">📊 Stock Market Dashboard</h1>
+      
+      {/* Navigation Tabs */}
+      <div className="flex space-x-4 mt-4">
+        <button 
+          className={`px-4 py-2 ${activeTab === "stocks" ? "bg-blue-500 text-white" : "bg-gray-200"}`} 
+          onClick={() => setActiveTab("stocks")}>
+          Stocks
+        </button>
+        <button 
+          className={`px-4 py-2 ${activeTab === "mutualfunds" ? "bg-blue-500 text-white" : "bg-gray-200"}`} 
+          onClick={() => setActiveTab("mutualfunds")}>
+          Mutual Funds
+        </button>
+        <button 
+          className={`px-4 py-2 ${activeTab === "fno" ? "bg-blue-500 text-white" : "bg-gray-200"}`} 
+          onClick={() => setActiveTab("fno")}>
+          F&O
+        </button>
+      </div>
+
+      {/* Render Components Based on Tab */}
+      <div className="mt-6">
+        {activeTab === "stocks" && <Stocks />}
+        {activeTab === "mutualfunds" && <MutualFunds />}
+        {activeTab === "fno" && <FNO />}
       </div>
     </div>
   );
