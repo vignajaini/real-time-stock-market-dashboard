@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 .home-container {
   background: linear-gradient(135deg, #000000, #333333);
   color: white;
@@ -100,7 +100,7 @@
   .features {
       grid-template-columns: 1fr;
   }
-=======
+
 
 /*.home-container {
     
@@ -333,5 +333,6 @@
 .feature-card:hover {
     transform: scale(1.05);
     background: rgba(255, 255, 255, 0.2);
->>>>>>> ff3fdf6 (updated)
+
+}
 }
