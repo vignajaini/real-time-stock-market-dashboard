@@ -7,7 +7,14 @@ import News from "./News";
 import Portfolio from "./Portfolio";
 import Alerts from "./Alerts";
 import Navbar from "./Navbar";
+
 import AuthModal from "./AuthModal"; // Ensure this file exists
+
+import Home from "./Home";
+import FNO from "./FNO";  // Futures & Options Component
+import MutualFunds from "./MutualFunds"; // Mutual Funds Component
+import Stocks from "./Stocks"; // Stocks Component
+
 import "./App.css";
 
 function App() {
@@ -17,8 +24,17 @@ function App() {
     <Router>
       <Navbar openAuthModal={() => setAuthModalOpen(true)} />
       <Routes>
+
         <Route path="/" element={<Home openAuthModal={() => setAuthModalOpen(true)} />} />
         <Route path="/dashboard" element={<Dashboard />} />
+
+        <Route path="/" element={<Home />} />
+        <Route path="/dashboard" element={<Dashboard />}>
+          <Route path="stocks" element={<Stocks />} />
+          <Route path="mutualfunds" element={<MutualFunds />} />
+          <Route path="fNO" element={<FNO />} />
+        </Route>
+
         <Route path="/watchlist" element={<Watchlist />} />
         <Route path="/news" element={<News />} />
         <Route path="/portfolio" element={<Portfolio />} />
