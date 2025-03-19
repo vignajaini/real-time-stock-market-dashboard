@@ -1,9 +1,7 @@
-<<<<<<< HEAD
-import React from "react";
-=======
+
+
 /*import React from "react";
 import { Link } from "react-router-dom";
->>>>>>> ff3fdf6 (updated)
 import "./Home.css";
 const Home = ({ openSignup }) => {
   return (
