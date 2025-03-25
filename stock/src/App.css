@@ -7,7 +7,8 @@
 }
 
 body {
-  
+  background-image: linear-gradient(to left bottom, #040404, #161618, #222126, #2e2e34, #3b3b44, #3e414a, #414650,
+   #444c56, #3f4b52, #3d494d, #3d4747, #3d4543);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -140,7 +141,7 @@ body {
 }
 
 .button-primary {
-  background: #000; /* Black button */
+  background: #000; 
   color: white;
 }
 
@@ -148,7 +149,6 @@ body {
   background: #333;
 }
 
-/* Footer */
 .footer {
   width: 100%;
   background-color: #000;

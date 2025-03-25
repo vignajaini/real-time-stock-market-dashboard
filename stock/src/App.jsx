@@ -31,10 +31,9 @@ function App() {
           <Route path="mutualfunds" element={<MutualFunds />} />
           <Route path="fNO" element={<FNO />} />
         </Route>
-
+        <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/watchlist" element={<Watchlist />} />
         <Route path="/news" element={<News />} />
-        <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/alerts" element={<Alerts />} />
       </Routes>
       {isAuthModalOpen && <AuthModal onClose={() => setAuthModalOpen(false)} />}
