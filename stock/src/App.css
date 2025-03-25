@@ -1,4 +1,4 @@
-/* Global Styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +18,7 @@ body {
 
 .navbar {
   width: 100%;
-  background-color: #000; 
+  background-color: white; 
   padding: 15px 20px;
   display: flex;
   justify-content: space-between;
@@ -125,15 +125,12 @@ body {
 }
 
 
-/* Grid Layout for Stocks */
 .stock-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   margin-top: 20px;
 }
-
-/* Buttons */
 .button {
   padding: 10px 15px;
   border: none;
@@ -161,7 +158,6 @@ body {
   margin-top: 20px;
 }
 
-/* Responsive Design */
 @media screen and (max-width: 768px) {
   .nav-links {
     display: flex;

@@ -7,13 +7,10 @@ import News from "./News";
 import Portfolio from "./Portfolio";
 import Alerts from "./Alerts";
 import Navbar from "./Navbar";
-
-import AuthModal from "./AuthModal"; // Ensure this file exists
-
-import Home from "./Home";
-import FNO from "./FNO";  // Futures & Options Component
-import MutualFunds from "./MutualFunds"; // Mutual Funds Component
-import Stocks from "./Stocks"; // Stocks Component
+import AuthModal from "./AuthModal"; 
+import FNO from "./FNO";  
+import MutualFunds from "./MutualFunds"; 
+import Stocks from "./Stocks"; 
 
 import "./App.css";
 
