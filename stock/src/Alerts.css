@@ -1,0 +1,35 @@
+.alert-container {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .alert-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .alert-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .alert-item {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #ffeb3b;
+  }
+  
+  .no-alerts {
+    text-align: center;
+    color: #888;
+  }
+  
