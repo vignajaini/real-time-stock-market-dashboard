@@ -15,11 +15,6 @@
     text-align: center;
   }
   
-  .alert-list {
-    list-style: none;
-    padding: 0;
-  }
-  
   .alert-item {
     padding: 10px;
     margin: 5px 0;
@@ -28,8 +23,25 @@
     background: #ffeb3b;
   }
   
+  
+  
   .no-alerts {
     text-align: center;
-    color: #888;
+    color: #777;
+    font-size: 1rem;
+  }
+  
+  .alert-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .alert-card {
+    transition: transform 0.2s;
+  }
+  
+  .alert-card:hover {
+    transform: scale(1.02);
   }
   
